@@ -92,25 +92,6 @@ Through these projects, I gained hands-on experience with:
 - Managing application state
 - Implementing game algorithms
 
-## 📸 Screenshots
-
-*Add screenshots of each application here*
-
-## 🔧 Future Improvements
-
-- [ ] Add scientific calculator mode
-- [ ] Implement difficulty levels for Minesweeper
-- [ ] Add syntax highlighting to Notepad
-- [ ] Create more animation effects
-- [ ] Package as standalone executables
-
 ## 💬 Contact
 
-**Zainab Qazi**
-- GitHub: [@zozo080212](https://github.com/zozo080212)
-- LinkedIn: [linkedin.com/in/zainab--qazi](https://www.linkedin.com/in/zainab--qazi/)
-- Email: zainabqazi1712@gmail.com
-
----
-
-*Built as part of Computer Science coursework at Penn State University-Harrisburg*
+**Zainab Qazi** - [GitHub](https://github.com/ZainabQ26) - [LinkedIn](https://www.linkedin.com/in/zainab--qazi/)
