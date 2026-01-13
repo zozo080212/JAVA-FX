@@ -1,4 +1,4 @@
-# 🎮 JavaFX Application Suite
+# 🎮 JavaFX Application 
 
 A collection of four desktop applications built with JavaFX to demonstrate GUI development skills and object-oriented programming principles.
 
