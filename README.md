@@ -50,7 +50,7 @@ Visual animation project displaying:
 ### Installation
 
 ```bash
-git clone https://github.com/zozo080212/JAVA-FX.git
+git clone https://github.com/ZainabQ26/JAVA-FX.git
 cd JAVA-FX
 mvn clean install
 ```
