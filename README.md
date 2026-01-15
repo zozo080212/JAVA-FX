@@ -1,97 +1,68 @@
-# 🎮 JavaFX Application 
+# 🎮 JavaFX Application
 
 A collection of four desktop applications built with JavaFX to demonstrate GUI development skills and object-oriented programming principles.
 
 ## 💻 Applications
 
 ### 1. 🧮 Calculator
-Full-featured calculator application with:
-- Basic arithmetic operations (+, -, ×, ÷)
-- Clean, intuitive user interface
-- Real-time calculation display
-- Error handling for invalid operations
+- Simple JavaFX calculator with: +, −, ×, ÷, percent, square root, reciprocal (1/x), sign toggle, decimal point, memory keys (MC/MR/MS/M+), backspace, CE/C.
+- Computes on =; basic error handling for invalid input or divide‑by‑zero.
 
 ### 2. 💣 Minesweeper
-Classic Minesweeper game implementation featuring:
-- Customizable grid sizes
-- Mine placement algorithm
-- Recursive cell revealing
-- Win/lose condition detection
-- Timer and mine counter
+- Fixed 10×10 grid with 10 randomly placed mines.
+- Left‑click to reveal, right‑click to toggle flag. Shows adjacent mine counts. Reveals all cells on game over and offers a reset button.
+- No timer, mine counter, win detection, or recursive zero‑cell expansion. Grid size and mine count are not configurable.
 
 ### 3. 📝 Notepad
-Simple text editor with:
-- File open/save functionality
-- Text editing capabilities
-- Basic formatting options
-- Clean, minimalist interface
+- Minimal text editor with New, Open, Save, and Save As for .txt files.
+- Single document, no text formatting or search features. Basic error dialogs.
 
 ### 4. ❄️ Snowflakes Animation
-Visual animation project displaying:
-- Animated falling snowflakes
-- Particle system implementation
-- Smooth graphics rendering
-- Customizable animation speed
+- Koch snowflake fractal renderer on a Canvas.
+- Adjustable iteration level (1–9) with optional auto‑redraw. Static rendering (no animation/particle system).
 
 ## 🛠️ Technologies
-
 - **Language:** Java
-- **Framework:** JavaFX
-- **Build Tool:** Maven
+- **UI Toolkit:** JavaFX
 - **IDE:** IntelliJ IDEA
 
 ## 🚀 Running the Applications
 
-### Prerequisites
-- Java 11 or higher
-- JavaFX SDK
-- Maven
+### From an IDE (recommended):
+Run the main method of any of these classes:
+- CALC.CALC
+- MINESWEEP.MINESWEEP
+- NOTEPAD.NOTEPAD
+- SnowFlakes.SNOWFLAKES
 
-### Installation
+Ensure JavaFX SDK is configured and added to the VM options with the required modules.
 
-```bash
-git clone https://github.com/ZainabQ26/JAVA-FX.git
-cd JAVA-FX
-mvn clean install
+### From command line (example outline; adjust paths):
+
+Compile with JavaFX on the module path.
+
+Run one main class with JavaFX modules enabled, e.g.:
+```
+java --module-path <path-to-javafx-lib> --add-modules javafx.controls,javafx.fxml \
+  -cp <compiled-output> CALC.CALC
 ```
 
-### Run Individual Applications
-
-```bash
-# Calculator
-java -jar target/calculator.jar
-
-# Minesweeper
-java -jar target/minesweeper.jar
-
-# Notepad
-java -jar target/notepad.jar
-
-# Snowflakes
-java -jar target/snowflakes.jar
-```
+**Note:** This project is not Maven-based (no pom.xml), and does not produce target/*.jar by default.
 
 ## 📚 Key Concepts Demonstrated
-
-- **JavaFX Scene Graph:** Building complex UIs with Scene and Nodes
-- **Event Handling:** Mouse clicks, keyboard input, window events
-- **FXML:** Separating UI design from application logic
-- **Layouts:** GridPane, VBox, HBox, StackPane
-- **CSS Styling:** Custom themes and visual design
-- **File I/O:** Reading and writing files (Notepad)
-- **Animation:** Transitions and timeline animations (Snowflakes)
-- **Game Logic:** Algorithm implementation (Minesweeper)
+- JavaFX scene graph and layouts: BorderPane, GridPane, VBox, HBox, StackPane.
+- Event handling: button actions and mouse clicks; basic text field events.
+- Basic styling: inline -fx- styles applied to some controls.
+- File I/O: reading/writing .txt files (Notepad).
+- Elementary game logic: mine placement and neighbor counting (Minesweeper).
+- Recursive drawing: Koch snowflake fractal via recursive subdivision.
 
 ## 🎓 Learning Outcomes
-
-Through these projects, I gained hands-on experience with:
-- GUI application architecture
-- Event-driven programming
-- User interface design principles
-- Debugging complex interactive applications
-- Managing application state
-- Implementing game algorithms
+- Build and run simple modular JavaFX applications.
+- Use event‑driven programming with UI controls and mouse events.
+- Organize basic UI layouts and manage simple application state (calculator memory, current file, game over flag).
+- Implement straightforward algorithms (neighbor counting; recursive fractal drawing).
+- Handle basic error scenarios (I/O errors, invalid numeric input) with simple alerts or messages.
 
 ## 💬 Contact
-
 **Zainab Qazi** - [GitHub](https://github.com/ZainabQ26) - [LinkedIn](https://www.linkedin.com/in/zainab--qazi/)
